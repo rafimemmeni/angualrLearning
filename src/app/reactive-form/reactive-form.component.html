@@ -1,0 +1,18 @@
+<p>
+  reactive-form works!
+</p>
+<form [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+  <div style="margin-bottom: 1em">
+    <button type="submit"
+            [disabled]="heroForm.pristine" class="btn btn-success">Save</button> &nbsp;
+    <button type="button" (click)="revert()"
+            [disabled]="heroForm.pristine" class="btn btn-danger">Revert</button>
+  </div>
+
+  <!-- Hero Detail Controls -->
+  <div class="form-group">
+      <label class="center-block">Name:
+        <input class="form-control" formControlName="name">
+      </label>
+  </div>
+</form>
