@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { RoutingTestComponent } from './routing-test/routing-test.component';
 import { ServicetestService } from './service-test/servicetest.service';
+import { AlertComponent } from './alert/alert.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ServicetestService } from './service-test/servicetest.service';
     MessagesComponent,
     HttpclientComponent,
     ReactiveFormComponent,
-    RoutingTestComponent
+    RoutingTestComponent,
+        AlertComponent
   ],
   imports: [
     BrowserModule,

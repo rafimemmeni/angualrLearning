@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ServicetestService } from './service-test/servicetest.service';
+import { AlertType } from './clasess/alert';
 
 
 @Component({
@@ -14,12 +15,12 @@ export class AppComponent {
   title = 'Tour of Heroes';
 
 
-  testfromcomponet : string;
   ngOnInit(){
-    this.testfromcomponet = this.servicetest.test;
-    this.servicetest.test = "upfayrf"
-    this.testfromcomponet = this.servicetest.test;
   }
+  success(message: string) { 
+    debugger;
+    this.servicetest.getAlert(AlertType.Success, message);
+}
  
 
 }
